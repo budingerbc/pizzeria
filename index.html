@@ -1,30 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Benny's Pizzeria</title>
-  </head>
-  <body>
-    <div class="container">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Benny's Pizzeria</title>
+</head>
+<body>
+  <div class="container">
 
-      <div id="top-banner">
-        <img src="img/pizza-logo.jpg" alt="Benny's Pizza">
+    <div id="top-banner">
+      <img src="img/pizza-logo.jpg" alt="Benny's Pizza">
+    </div>
+
+    <div class="row" id="pizza-order-size">
+      <div class="col-md-6" id="order-menu">
+        <h3 class="menu-title">Order</h3>
+
+        <h4>How hungry are you?</h4>
+        <label class="radio-inline"><input type="radio" name="pizza-size" value="small" id="small">Small</label>
+        <label class="radio-inline"><input type="radio" name="pizza-size" value="medium" id="medium">Medium</label>
+        <label class="radio-inline"><input type="radio" name="pizza-size" value="large" id="large">Large</label>
+
+        <h4>Load up your pizza:</h4>
+        <div class="row">
+          <div class="col-sm-6">
+            <h5><strong>Meat Toppings:</strong></h5>
+            <div class="checkbox">
+              <label><input type="checkbox" value="pepperoni">Pepperoni</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="sausage">Sausage</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="salami">Salami</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="ham">Ham</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="chicken">Chicken</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="bacon">Bacon</label>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h5><strong>Veggies:</strong></h5>
+            <div class="checkbox">
+              <label><input type="checkbox" value="mushrooms">Mushrooms</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="onions">Onions</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="olives">Olives</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="peppers">Bell Peppers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="jalapenos">Jalapenos</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="pineapple">Pineapple</label>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="row order">
-        <div class="col-md-6" id="order-menu">
-          <h3>Select your pizza size</h3>
 
-        </div>
-        <div class="col-md-6" id="subtotal-menu">
 
-        </div>
-
+      <div class="col-md-6" id="subtotal-menu">
+        <h3 class="menu-title">Subtotal</h3>
       </div>
 
     </div>
-  </body>
+
+  </div>
+</body>
 </html>
