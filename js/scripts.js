@@ -31,13 +31,18 @@ Pizza.prototype.getSubtotal = function() {
 };
 
 $(document).ready(function() {
+
+  $("#clear").click(function() {
+    location.reload();
+  });
+
   $("form#pizza-order").submit(function(event) {
     event.preventDefault();
 
     // Finds the size of the pizza by user input from radio buttons
     var pizzaSize = $("input:radio[name=pizza-size]:checked").val();
     var pizzaToppings = [];
-    // Creates an array with each topping in an index from checkboxes
+    // Creates an array with each topping from checkboxes
     $("input:checkbox[name=toppings]:checked").each(function() {
       pizzaToppings.push($(this).val());
     });
