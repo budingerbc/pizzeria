@@ -15,74 +15,121 @@
     </div>
 
     <form id="pizza-order">
-    <div class="row" id="pizza-order-size">
-      <div class="col-md-6" id="order-menu">
-        <h3 class="menu-title">Order</h3>
+      <div class="row" id="pizza-order-size">
+        <div class="col-md-6" id="order-menu">
+          <h3 class="menu-title">Order</h3>
 
-        <h4>How hungry are you?</h4>
-        <label class="radio-inline"><input type="radio" name="pizza-size" value="small" id="small">Small</label>
-        <label class="radio-inline"><input type="radio" name="pizza-size" value="medium" id="medium">Medium</label>
-        <label class="radio-inline"><input type="radio" name="pizza-size" value="large" id="large">Large</label>
+          <h4>How hungry are you?</h4>
+          <label class="radio-inline"><input type="radio" name="pizza-size" value="Small" id="small">Small</label>
+          <label class="radio-inline"><input type="radio" name="pizza-size" value="Medium" id="medium">Medium</label>
+          <label class="radio-inline"><input type="radio" name="pizza-size" value="Large" id="large">Large</label>
 
-        <h4>Load up your pizza:</h4>
-        <div class="row">
-          <div class="col-sm-6">
-            <h5><strong>Meat Toppings:</strong></h5>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+          <h4>Load up your pizza:</h4>
+          <div class="row">
+            <div class="col-sm-6">
+              <h5><strong>Meat Toppings:</strong></h5>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Sausage">Sausage</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Salami">Salami</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Ham">Ham</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Chicken">Chicken</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Bacon">Bacon</label>
+              </div>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="salami">Salami</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="ham">Ham</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="chicken">Chicken</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="bacon">Bacon</label>
+
+            <div class="col-sm-6">
+              <h5><strong>Veggies:</strong></h5>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Onions">Onions</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Olives">Olives</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Bell Peppers">Bell Peppers</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Jalapenos">Jalapenos</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="toppings" value="Pineapple">Pineapple</label>
+              </div>
             </div>
           </div>
+          <button type="submit" id="submit">Place Order</button>
+        </div>
 
-          <div class="col-sm-6">
-            <h5><strong>Veggies:</strong></h5>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="mushrooms">Mushrooms</label>
+      </form>
+
+      <div class="col-md-6" id="pricing-subtotal-menu">
+        <div id="pricing-menu">
+          <h3 class="menu-title">Pricing</h3>
+          <table id="pricing-table">
+            <tr>
+              <th>Size</th>
+              <th>Cost</th>
+              <th>Per Topping</th>
+            </tr>
+            <tr>
+              <td>Small</td>
+              <td>$9.99</td>
+              <td>$0.50</td>
+            </tr>
+            <tr>
+              <td>Medium</td>
+              <td>$10.99</td>
+              <td>$0.75</td>
+            </tr>
+            <tr>
+              <td>Large</td>
+              <td>$12.99</td>
+              <td>$1.00</td>
+            </tr>
+          </table>
+        </div>
+        <div id="subtotal-menu">
+          <h3 class="menu-title">Subtotal</h3>
+          <div class="row">
+            <div class="col-sm-2">
+              <h5 class="price-headers">Count</h5>
+              <div class="count-display">
+
+              </div>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="onions">Onions</label>
+            <div class="col-sm-7">
+              <h5 class="price-headers">Order</h5>
+              <div class="order-display">
+              </div>
+              <ul id="toppingsList">
+
+              </ul>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="olives">Olives</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="peppers">Bell Peppers</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="jalapenos">Jalapenos</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" value="pineapple">Pineapple</label>
+            <div class="col-sm-3">
+              <h5 class="price-headers">Price</h5>
+              <div class="price-display">
+              </div>
+              <div id="toppingsPrice">
+
+              </div>
             </div>
           </div>
         </div>
-        <button type="submit" id="submit">Place Order</button>
       </div>
-
-    </form>
-
-
-
-      <div class="col-md-6" id="subtotal-menu">
-        <h3 class="menu-title">Subtotal</h3>
-      </div>
-
     </div>
-
   </div>
 </body>
 </html>

@@ -2,6 +2,9 @@ body {
   background-color: #352a6d;
 }
 
+#subtotal-menu {
+}
+
 #top-banner {
   display: flex;
   flex-direction: row;
@@ -19,6 +22,12 @@ img {
 
 #pizza-order-size {
   margin: 5px 0px;
+  display: flex;
+}
+
+.col-md-6 {
+  padding: 1em;
+  border: 1px solid black;
 }
 
 #order-menu {
@@ -28,8 +37,7 @@ img {
   text-align: center;
 }
 
-#subtotal-menu {
-  height: auto;
+#pricing-subtotal-menu {
   width: 35%;
   background-color: #dbf1fc;
 }
@@ -42,4 +50,48 @@ img {
 
 #submit {
   margin: 5px 0px;
+}
+
+table {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+#pricing-table * {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.col-sm-2 {
+  text-align: center;
+}
+
+.col-sm-3 {
+  text-align: right;
+}
+
+.price-headers {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.count-display {
+  font-size: 12px;
+}
+
+.order-display {
+  font-size: 12px;
+}
+
+.price-display {
+  font-size: 12px;
+}
+
+#toppingsList {
+  font-size: 12px;
+}
+
+#toppingsPrice {
+  font-size: 12px;
 }
